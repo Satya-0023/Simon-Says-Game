@@ -1,0 +1,111 @@
+body {
+    text-align: center;
+    background: linear-gradient(135deg, #f8ffae 0%, #43c6ac 100%);
+    min-height: 100vh;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #333;
+    margin-top: 2rem;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 8px #fff8;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #222;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 6px #fff6;
+}
+
+.red, .yellow, .green, .purple {
+    margin: 0 auto;
+    height: 160px;
+    width: 160px;
+    border: 8px solid #222;
+    border-radius: 25%;
+    margin: 2rem;
+    font-size: 2rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 24px 0 #0002;
+    cursor: pointer;
+    transition: transform 0.1s, box-shadow 0.2s;
+}
+
+.red { background-color: #d95980; }
+.yellow { background-color: #f99b45; }
+.green { background-color: #63aac0; }
+.purple { background-color: #819ff9; }
+
+.btn:hover, .btn:active {
+    transform: scale(1.08);
+    box-shadow: 0 8px 32px 0 #0004;
+    opacity: 0.9;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.line1, .line2 {
+    display: flex;
+    justify-content: center;
+}
+
+.flash {
+    filter: brightness(2) drop-shadow(0 0 20px #fff8);
+}
+
+.flashend {
+    background-color: #ff4c4c !important;
+    transition: background 0.2s;
+}
+
+@media (max-width: 900px) {
+    .red, .yellow, .green, .purple {
+        height: 110px;
+        width: 110px;
+        font-size: 1.2rem;
+        margin: 1rem;
+    }
+    h1 {
+        font-size: 2.2rem;
+    }
+    h2 {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .main {
+        width: 100vw;
+        padding: 0;
+    }
+    .line1, .line2 {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+    .red, .yellow, .green, .purple {
+        height: 70px;
+        width: 70px;
+        font-size: 0.9rem;
+        margin: 0.5rem;
+        border-width: 4px;
+    }
+    h1 {
+        font-size: 1.3rem;
+        margin-top: 1rem;
+    }
+    h2 {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+    }
+}

@@ -10,6 +10,10 @@ A modern, interactive web-based version of the classic Simon memory game.
 - **Game Over Feedback:** Clear feedback and encouragement when you lose, with easy restart.
 - **Prevents Rapid Clicks:** Ensures fair play by blocking input during sequence playback.
 
+![image](https://github.com/user-attachments/assets/a2e742fa-dfe4-44cc-a565-bf7cc6cbc93f)
+
+
+
 ## How to Play
 1. **Start the Game:** Press any key to begin.
 2. **Watch the Sequence:** The game will flash a sequence of colors. Remember the order!
